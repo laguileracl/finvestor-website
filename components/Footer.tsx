@@ -8,10 +8,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const services = [
-    { name: 'Gestión de Inversiones', href: '/servicios/inversiones' },
-    { name: 'Gestión Patrimonial', href: '/servicios/patrimonial' },
-    { name: 'Asesoría Financiera', href: '/servicios/asesoria' },
-    { name: 'Servicios Corporativos', href: '/servicios/corporativos' },
+    { name: 'Nuestros Servicios', href: '/servicios' },
   ];
 
   const company = [
@@ -24,7 +21,6 @@ const Footer = () => {
   const legal = [
     { name: 'Política de Privacidad', href: '/privacidad' },
     { name: 'Términos y Condiciones', href: '/terminos' },
-    { name: 'Aviso Legal', href: '/legal' },
   ];
 
   return (
