@@ -1,0 +1,119 @@
+CHECKLIST DE DEPLOYMENT - FINVESTOR.CL
+=========================================
+
+📋 Pre-Deployment
+-----------------
+[✅] Proyecto creado con Next.js 14
+[✅] Build estática generada en /out/
+[✅] Todas las páginas funcionando
+[✅] Responsive design verificado
+[✅] SEO optimizado
+[✅] Logo incluido
+[✅] Formulario de contacto creado
+[✅] Navegación completa
+[✅] Footer con información de contacto
+
+📦 Archivos para Subir a Bluehost
+----------------------------------
+[✅] Carpeta /out/ completa (generada con npm run build)
+[⚠️] Archivo .htaccess (ver DEPLOYMENT.md)
+[⚠️] Verificar que el logo esté en /out/
+
+🌐 Configuración en Bluehost
+-----------------------------
+[ ] Acceder a cPanel de Bluehost
+[ ] Ir a "Administrador de Archivos"
+[ ] Navegar a public_html (o directorio de finvestor.cl)
+[ ] Borrar archivos existentes si los hay
+[ ] Subir TODO el contenido de /out/
+[ ] Crear/editar archivo .htaccess con la configuración
+[ ] Verificar permisos (644 para archivos, 755 para carpetas)
+
+🔒 SSL/HTTPS
+------------
+[ ] En cPanel, ir a "SSL/TLS Status"
+[ ] Instalar certificado Let's Encrypt para finvestor.cl
+[ ] Verificar que HTTPS funcione
+[ ] Configurar redirección HTTP → HTTPS en .htaccess
+
+✅ Verificación Post-Deployment
+-------------------------------
+[ ] Visitar https://finvestor.cl
+[ ] Probar página de inicio
+[ ] Probar /servicios
+[ ] Probar /nosotros
+[ ] Probar /contacto
+[ ] Verificar /privacidad
+[ ] Verificar /terminos
+[ ] Probar navegación en menú
+[ ] Verificar que el logo se vea
+[ ] Probar en móvil
+[ ] Probar en tablet
+[ ] Probar en desktop
+[ ] Verificar formulario de contacto
+[ ] Revisar velocidad de carga
+
+📧 Configuración del Formulario de Contacto
+-------------------------------------------
+[ ] Elegir método (Formspree, SendGrid, o PHP)
+[ ] Configurar endpoint de email
+[ ] Probar envío de formulario
+[ ] Verificar recepción de emails en contacto@finvestor.cl
+
+🔍 SEO y Analytics (Opcional)
+------------------------------
+[ ] Verificar sitio en Google Search Console
+[ ] Enviar sitemap.xml
+[ ] Configurar Google Analytics
+[ ] Configurar Facebook Pixel (si aplica)
+[ ] Verificar meta tags con herramientas SEO
+[ ] Probar con PageSpeed Insights
+[ ] Revisar en GTmetrix
+
+⚡ Optimización (Opcional pero Recomendado)
+-------------------------------------------
+[ ] Activar Cloudflare en Bluehost (CDN gratuito)
+[ ] Comprimir imágenes si es necesario
+[ ] Verificar caché del navegador
+[ ] Habilitar compresión GZIP
+[ ] Activar HTTP/2
+
+📱 Testing Completo
+-------------------
+[ ] Chrome Desktop
+[ ] Firefox Desktop
+[ ] Safari Desktop
+[ ] Edge Desktop
+[ ] Chrome Mobile
+[ ] Safari Mobile (iOS)
+[ ] Diferentes resoluciones
+[ ] Modo oscuro del navegador
+
+🎨 Contenido Final
+------------------
+[ ] Revisar todos los textos
+[ ] Verificar información de contacto
+[ ] Comprobar links del footer
+[ ] Verificar redes sociales (si aplica)
+[ ] Revisar ortografía y gramática
+
+🚨 Importante
+-------------
+[ ] Hacer backup antes de subir
+[ ] Guardar credenciales de acceso
+[ ] Documentar cambios realizados
+[ ] Configurar email de respaldo
+
+✨ Extras
+---------
+[ ] Configurar email profesional (nombre@finvestor.cl)
+[ ] Crear cuenta de Google My Business
+[ ] Agregar el sitio a directorios de negocios
+[ ] Preparar contenido para redes sociales
+
+---
+📞 Contacto de Soporte
+contacto@finvestor.cl
++56 2 2234 5678
+
+🎉 Una vez completado todo este checklist, ¡tu sitio estará 100% operativo!
