@@ -151,7 +151,7 @@
 Si necesitas actualizar los iconos en el futuro:
 
 ```bash
-cd /Users/laa/Projects/finvestor
+cd /Users/laa/Projects/websites/finvestor
 
 # 1. Reemplaza el logo original
 # coloca nuevo-logo.png en la raíz
