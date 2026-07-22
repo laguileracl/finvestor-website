@@ -1,9 +1,17 @@
 #!/bin/bash
 
 # Configuración
-ZONE_ID="1ecd80125f54d3983039645079aed5e9"
-ACCOUNT_ID="432a54869cfc91d25221ea5c18643700"
-API_TOKEN="***REMOVED***"
+# El token de API NUNCA debe ir hardcodeado. Se lee de una variable de entorno.
+# Uso: CLOUDFLARE_API_TOKEN=xxxx ./deploy-cloudflare.sh
+: "${CLOUDFLARE_API_TOKEN:?falta CLOUDFLARE_API_TOKEN}"
+
+# IDs de zona/cuenta (no son secretos, pero se pueden sobreescribir por entorno)
+ZONE_ID="${CLOUDFLARE_ZONE_ID:-1ecd80125f54d3983039645079aed5e9}"
+ACCOUNT_ID="${CLOUDFLARE_ACCOUNT_ID:-432a54869cfc91d25221ea5c18643700}"
+API_TOKEN="$CLOUDFLARE_API_TOKEN"
+
+# Endpoint de la API de DNS records para esta zona
+API_URL="https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records"
 
 echo "🚀 Configurando DNS en Cloudflare para finvestor.cl"
 echo "=================================================="
